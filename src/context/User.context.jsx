@@ -6,8 +6,10 @@ export const UserContextProvider = ({ children }) => {
 
   useEffect(() => {
     const token = localStorage.getItem(import.meta.env.VITE_API_TOKEN_KEY);
+    console.log(token, "El token ofuscado");
     if (token) {
       const decodedToken = decodeToken(token);
+      console.log(decodedToken, "El token decodificado");
       setUser({
         id: decodedToken.user.id,
         name: decodedToken.user.full_name,
@@ -32,7 +34,6 @@ export const UserContextProvider = ({ children }) => {
 
   const logout = () => {
     window.localStorage.removeItem(import.meta.env.VITE_API_TOKEN_KEY);
-    window.localStorage.removeItem("user");
     setUser(null);
   };
 

@@ -62,7 +62,7 @@ const ProductList = () => {
         <div className="row">
           <div className="col-md-2">
             <h5>Categorias</h5>
-            <ul className="mt-3 mb-4" style={{listStyle: 'none'}}>
+            <ul className="mt-3 mb-4" style={{ listStyle: "none" }}>
               {categorias.map((category) => {
                 return (
                   <li
