@@ -1,0 +1,135 @@
+.hero {
+  width: 100%;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+
+  background-image: url('https://i.ibb.co/9Gt5YJy/banner.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  font-size: 5em;
+
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.hero h2 {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.hero .btn {
+  display: block;
+  width: 200px;
+
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+
+  border: 3px solid white;
+  border-radius: 20px;
+
+}
+
+.header {
+  background-color: #3C2A21;
+  color: white;
+  padding: 1em;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.header a:hover {
+  background-color: beige;
+  color: black;
+  border-radius: 10px;
+}
+
+.header-side-1 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.header-side-2 {
+  text-align: right;
+  font-weight: bold;
+}
+
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-login {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.form-login label {
+  font-size: 1.5em;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+  }
+
+  .nav-wrapper a {
+    margin: 1em;
+    display: grid;
+    padding: 0.5em;
+    margin: 0px;
+    place-items: center;
+  }
+
+  .nav-wrapper .header-side-2 {
+    margin: 1em;
+    display: grid;
+    padding: 0.5em;
+    margin: 0px;
+    place-items: center;
+  }
+
+  .nav-wrapper .header-side-1 {
+    margin: 1em;
+    display: grid;
+    padding: 0.5em;
+    margin: 0px;
+    place-items: center;
+  }
+
+}
+footer {
+  background-color: #3C2A21;
+  color: #fff;
+}
+
+footer ul li a {
+  color: #fff !important;
+}
